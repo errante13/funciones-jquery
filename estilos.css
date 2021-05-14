@@ -1,0 +1,36 @@
+*{
+    margin: auto;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 700px;
+    height: 800px;
+    background-color: black;
+}
+
+h1{
+    color: white;
+text-align: center;
+}
+
+button{
+
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+
+p{
+    color: white;
+}
+
+img{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}

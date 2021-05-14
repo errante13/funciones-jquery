@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('h1').hover(function(){
+                $(this).css("background-color","red");},
+                function(){$(this).css("background-color","black");});
+        
+            $('#btn1').click(function(){
+                $('p').show();        
+            });
+            $('#btn2').click(function(){
+                $('p').hide();        
+            });
+            $('#btn3').click(function(){
+                $('img').toggle("slow");        
+            });
+
+            $('#btn4').click(function(){
+                $('img').slideDown();
+            });
+            $('#btn5').click(function(){
+                $('img').slideUp();
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+ <div class="contenedor">
+    <div class="nav">
+        <h1>Esto es una prueba</h1>
+        <button id="btn1">agregar</button>
+        <button id="btn2">quitar</button>
+        <p>hola soy un texto de prueba</p>
+        <button id="btn3"> probar </button>
+        <button id="btn4">slideDown</button>
+        <button id="btn5">slideup</button>
+
+        <img src="https://www.latercera.com/resizer/I6XaWyhCokBSy1I1ebUbn2HWzbw=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/J4AHAHSFNRGX7MCO6653MOPEFA.jpg" alt="autos">
+        
+    </div>
+
+ </div>
+</body>
+</html>
